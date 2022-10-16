@@ -1,0 +1,23 @@
+<script>// single level inheritance
+    class a {// crate a parent class and function
+        myfun() {
+            console.log("a class")
+        }
+    }
+    class b  extends a{
+        myfun2() {
+            console.log(" class b")
+
+        }
+        myfun() {
+
+            //super.myfun();
+            console.log("method ovrride");
+        }
+    }
+    var rec =new b();
+    console.log(rec);
+    rec.myfun();
+    rec.myfun2();
+
+</script>
